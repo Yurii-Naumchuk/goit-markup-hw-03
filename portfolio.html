@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <!--основні шрифти-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&family=Tangerine&display=swap" rel="stylesheet">
@@ -13,24 +14,30 @@
 </head>
     <body>
         <!--Шапка-->
-        <header class="header">
-            <nav class="nav">
-                <a class="logo-black link" href="./index.html"> <span class="logo-akcent">Web</span>Studio</a>
-                <ul class="nav-list list">
-                    <li class="nav-item"><a class="nav-link link" href="./index.html">Студия</a></li>
-                    <li class="nav-item"><a class="link current" href="./portfolio.html">Портфолио</a></li>
-                    <li class="nav-item"><a class="nav-link link" href="">Контакты</a></li>
-                    
+        <header>
+            <div class="container header-container">
+                <!--навігація сторінки-->
+                <nav class="header-nav">
+                    <a class="logo-header link" href="./index.html"> <span class="logo-akcent">Web</span>Studio</a>
+                    <ul class="nav-list list">
+                        <li class="nav-item"><a class="nav-link link" href="./index.html">Студия</a></li>
+                        <li class="nav-item"><a class="link current" href="./portfolio.html">Портфолио</a></li>
+                        <li class="nav-item"><a class="nav-link link" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <!--контакти-->
+                <ul class="contact-nav list">
+                    <a class="contact-nav-item link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a class="contact-nav-item link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </ul>
-            </nav>
-            <a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="header-phone link" href="tel:+380961111111">+38 096 111 11 11</a>
-            </header>
+            </div>
+        </header>
         <!--Основний контент сторінки-->
         <main>
              <!--Блок кнопок навігації по портфоліо-->
               <h2 hidden>Наши работы</h2>
-              <section class="portfolio">
+              <section class="section">
+                <div class="container">
                  <ul class="filter-list list">
                       <li class="filter-item"> <button class="filter-btn" type="button">Все</button></li>
                       <li class="filter-item"> <button class="filter-btn" type="button">Веб-сайты</button></li>
@@ -39,6 +46,8 @@
                       <li class="filter-item"> <button class="filter-btn" type="button">Маркетинг</button></li>
                  </ul>
                 <!--Портфоліо робіт-->
+                <div class="test-container">
+                <div class="flex-container">
                 <ul class="portfolio-list list">
                         <li class="portfolio-item">
                             <img class="portfolio-img" src="./images/img-p1.jpg" alt="ноутбук со страницей вебсайта" width="370" height="294">
@@ -78,7 +87,7 @@
 
                         <li class="portfolio-item">
                             <img class="portfolio-img" src="./images/img-p7.jpg" alt="две страницы журнала" width="370" height="294">
-                            <h3 class="portfolio-title">Издание <span lang="en">Limited Edition</span></h3>
+                            <h3 class="portfolio-subtitle">Издание <span lang="en">Limited Edition</span></h3>
                             <p class="portfolio-text">Дизайн</p>
                         </li>
 
@@ -94,18 +103,23 @@
                             <p class="portfolio-text">Приложение</p>
                         </li>
                     </ul>
+                </div>
+                 </div>
+                </div>
                 </section>
             </main>
             <!-- Підвальчик-->
             <footer class="footer">
-                <a class="logo-white link" href="./index.html"> <span class="logo-akcent">Web</span>Studio</a>
-                <address class="address">
-                    <ul class="address-list list">
-                        <li class="address-item"> <a class="address-city link" href="https://goo.gl/maps/BRcKdjN6VGrAt3CW7">г. Киев, пр-т Леси Украинки, 26</a></li>
-                        <li class="address-item"><a class="address-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="address-item"><a class="address-phone link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                    </ul>
-                </address>
+                <div class="container footer-container"> 
+                    <a class="logo-footer link" href="./index.html"> <span class="logo-akcent">Web</span>Studio</a>
+                    <address class="address">
+                        <ul class="address-list list">
+                            <li class="address-item"> <a class="address-city link" href="https://goo.gl/maps/BRcKdjN6VGrAt3CW7">г. Киев, пр-т Леси Украинки, 26</a></li>
+                            <li class="address-item"><a class="address-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li class="address-item"><a class="address-phone link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
             </footer>
    </body>
 </html>

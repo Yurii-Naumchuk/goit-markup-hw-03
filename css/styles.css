@@ -273,8 +273,8 @@ border-radius: 0px 0px 4px 4px;
   margin-right: 0px;}
   
 /*footer*/
+.footer {background-color: var(--secondary-bg-color);}
 .footer-container {
-    background-color: var(--secondary-bg-color);
     padding-top: 60px;
     padding-bottom: 60px;
   }
